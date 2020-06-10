@@ -15,5 +15,25 @@ $(document).ready(function () {
       $("nav ul li a ").css({ "pointer-events": "none" });
     });
   }
-  
+
+
+function slider() {
+      let n = 1;
+      let interval = setInterval(() => {
+        $(".about-me .skills ul li:nth-child(" + n + ")").css({ "animation": "slide-right 500ms ease-in forwards",});
+        n++;
+        if (n == 7) {
+          clearInterval(interval);
+        }
+      }, 100);
+    }
+
+  let waypoint = new Waypoint({
+    element: $(".about-me .skills ul li"),
+    handler: function () {
+      slider()
+    },
+    offset: "85%",
+  });
+
 })

@@ -158,9 +158,24 @@ header .scroll svg path {
   padding: 0 15px;
 }
 .skills ul li {
+  width: fit-content;
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  transform: translateX(-100%);
+  opacity: 0;
+}
+@keyframes slide-right{
+  0%{
+      opacity: 0;
+    transform: translateX(-100%);
+  
+  }
+  100%{
+     opacity: 1;
+    transform: translateX(0%);
+   
+  }
 }
 .skills h2 {
   margin-bottom: 30px;
@@ -414,7 +429,9 @@ input[type="submit"]:hover {
   }
   .about-me .skills ul {
     column-count: 2;
+   
   }
+  
   .projects {
     background-color: #484e53;
     padding-bottom: 150px;
@@ -632,3 +649,4 @@ input[type="submit"]:hover {
     max-width: 2600px;
   }
 }
+/* adding animtaion to the elements*/
