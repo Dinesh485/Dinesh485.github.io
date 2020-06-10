@@ -36,4 +36,23 @@ function slider() {
     offset: "85%",
   });
 
+  function pop() {
+    let n = 1;
+    let interval = setInterval(() => {
+      $(".projects .outerdiv div a:nth-child(" + n + ")").css({ 'animation': "pop 800ms ease-out forwards",
+      });
+      n++;
+      if (n == 7) {
+        clearInterval(interval);
+      }
+    }, 100);
+  }
+  let waypoint2 = new Waypoint({
+    element: $(".projects .outerdiv"),
+    handler: function () {
+      pop()
+    },
+    offset: "40%",
+  });
+
 })
