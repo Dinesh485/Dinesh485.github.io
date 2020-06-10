@@ -409,11 +409,16 @@ input[type="submit"]:hover {
   nav ul li a {
     font-size: 0.9em;
     font-weight: normal;
-    padding: 10px 15px;
+    padding: 10px 5px;
     pointer-events: all;
   }
   nav ul li {
-    margin: 0;
+    margin: 0 10px ;
+    transition: border 200ms linear;
+    border-bottom: 3px solid transparent;
+  }
+  nav ul li:hover{
+    border-bottom: 3px solid white;
   }
   .header .intro {
     margin-left: 30px;
@@ -531,6 +536,9 @@ input[type="submit"]:hover {
   .header .intro {
     margin-left: 40px;
   }
+  nav ul li{
+    margin: 0 20px;
+  }
   .about-me h1,
   .contact h1,
   .projects h1 {
@@ -547,11 +555,11 @@ input[type="submit"]:hover {
     margin-left: 150px;
   }
   nav ul li {
-    margin: 0 20px;
+    margin: 0 30px;
   }
   nav ul li a {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .about-me h1,
   .contact h1,
@@ -575,6 +583,7 @@ input[type="submit"]:hover {
   body {
     font-size: 32px;
   }
+  
   .about-me .me p {
     max-width: 1050px;
   }
@@ -619,7 +628,7 @@ input[type="submit"]:hover {
     font-size: 25px;
   }
   nav ul li {
-    margin: 0 30px;
+    margin: 0 35px;
   }
   .contact .social-media {
     max-width: 1500px;

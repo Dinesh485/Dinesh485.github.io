@@ -47,10 +47,13 @@ function slider() {
       }
     }, 100);
   }
+  
+
   let waypoint2 = new Waypoint({
     element: $(".projects .outerdiv"),
     handler: function () {
       pop()
+    
     },
     offset: "40%",
   });
