@@ -624,4 +624,11 @@ input[type="submit"]:hover {
   .contact {
     padding-bottom: 200px;
   }
+  body{
+    max-width: 2600px;
+    margin: 0 auto;
+  }
+  nav{
+    max-width: 2600px;
+  }
 }
