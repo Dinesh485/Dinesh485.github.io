@@ -43,21 +43,54 @@ function slider() {
 
   function pop() {
     let n = 1;
-    let interval = setInterval(() => {
+    let interval2 = setInterval(() => {
       $(".projects .outerdiv div a:nth-child(" + n + ")").css({ 'animation': "pop 800ms ease-out forwards",});
       n++;
       if (n == 7) {
-        clearInterval(interval);
+        clearInterval(interval2);
       }
     }, 100);
   }
   
 
+  const lightWave = () => {
+    let n = 1;
+    let interval3 = setInterval(() => {
+      switch (n) {
+        case 1:
+          $('.projects .outerdiv div a ').removeClass('light-wave')
+          $('.projects .outerdiv div a:nth-child(1)').addClass('light-wave');
+          break;
+        case 2:
+          $('.projects .outerdiv div a ').removeClass('light-wave')
+          $('.projects .outerdiv div a:nth-child(2)').addClass('light-wave');
+           $(".projects .outerdiv div a:nth-child(3)").addClass("light-wave");
+          break;
+        case 3:
+          $('.projects .outerdiv div a ').removeClass('light-wave');
+          $('.projects .outerdiv div a:nth-child(4)').addClass('light-wave');
+          $(".projects .outerdiv div a:nth-child(5)").addClass("light-wave");
+          break;
+        case 4:
+          $(".projects .outerdiv div a ").removeClass("light-wave");
+          $(".projects .outerdiv div a:nth-child(6)").addClass("light-wave");
+          break;
+        case 5:
+          $(".projects .outerdiv div a ").removeClass("light-wave");
+          break;
+      }
+      if (n == 5) return clearInterval(interval3);
+      n++;
+    },125);
+   }
+
+   setInterval(lightWave, 2500)
+
   let waypoint2 = new Waypoint({
     element: $(".projects .outerdiv"),
     handler: function () {
       pop()
-    
+      
     },
     offset: "40%",
   });
