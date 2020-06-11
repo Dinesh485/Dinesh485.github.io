@@ -40,6 +40,7 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 2;
+  height: fit-content;
 }
 nav ul {
   position: fixed;
