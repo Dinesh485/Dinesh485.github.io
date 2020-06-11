@@ -89,6 +89,12 @@ header h3 {
 header .intro {
   grid-row: 3/5;
   margin-left: 10px;
+  width: fit-content;
+  transition: clip-path 2000ms ease;
+  clip-path: circle(50% at -50% -50%)
+}
+.header .intro-path{
+   clip-path: circle(100%)
 }
 header .scroll {
   color: white;

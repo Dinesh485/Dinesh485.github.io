@@ -1,4 +1,9 @@
 $(document).ready(function () {
+  setTimeout(() => {
+    $("header .intro").addClass("intro-path");
+  }, 500);
+   
+
   if (window.matchMedia('(max-width: 1000px').matches) {
     $(".menu-icon").click(function () {
       $(".menu-icon div:nth-child(1)").toggleClass("top");
@@ -15,7 +20,7 @@ $(document).ready(function () {
       $("nav ul li a ").css({ "pointer-events": "none" });
     });
   }
-
+ 
 
 function slider() {
       let n = 1;
