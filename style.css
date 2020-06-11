@@ -167,8 +167,7 @@ header .scroll svg path {
   width: fit-content;
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
-  --moz-transfrom: translateX(-100%);
+  margin-bottom: 10px; 
   transform: translateX(-100%);
   opacity: 0;
 }
@@ -463,15 +462,18 @@ input[type="submit"]:hover {
   @keyframes pop {
     0%{
       opacity: 0;
-      transform: scale(0.9)
+      transform: scale(0.9);
+      --moz-transform: scale(0.9)
     }
     50%{
       opacity: 1;
-      transform: scale(1.05)
+      transform: scale(1.05);
+            --moz-transform: scale(1.05)
     }
     100%{
       opacity: 1;
-      transform: scale(0%)
+      transform: scale(0%);
+      --moz-tranfrom: scale(0%)
     }
   }
   .projects .outerdiv div a:hover {
