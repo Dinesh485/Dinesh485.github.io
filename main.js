@@ -25,7 +25,7 @@ $(document).ready(function () {
 function slider() {
       let n = 1;
       let interval = setInterval(() => {
-        $(".about-me .skills ul li:nth-child(" + n + ")").css({ "animation": "slide-right 500ms ease-in forwards",});
+        $(".about-me .skills ul li:nth-child(" + n + ")").css({ "animation": "slide-right 500ms ease-in forwards"});
         n++;
         if (n == 7) {
           clearInterval(interval);
@@ -45,7 +45,7 @@ function slider() {
     let n = 1;
     let interval = setInterval(() => {
       $(".projects .outerdiv div a:nth-child(" + n + ")").css({ 'animation': "pop 800ms ease-out forwards",
-      });
+      "--moz-animation": "pop 800ms ease-out forwards"});
       n++;
       if (n == 7) {
         clearInterval(interval);
