@@ -458,6 +458,7 @@ input[type="submit"]:hover {
     border: none;
     transition: transform 300ms linear, box-shadow 300ms linear;
     opacity: 0;
+    margin: 0;
   }
   @keyframes pop {
     0%{
@@ -531,6 +532,13 @@ input[type="submit"]:hover {
   }
   .contact .social-media a:first-child {
     grid-column: 2;
+  }
+}
+/*media query 1200px*/
+@media(min-width : 1200px){
+  .projecst .outerdiv div a{
+     height: 360px;
+    width: 220px
   }
 }
 /* media query 1400px */
