@@ -44,8 +44,7 @@ function slider() {
   function pop() {
     let n = 1;
     let interval = setInterval(() => {
-      $(".projects .outerdiv div a:nth-child(" + n + ")").css({ 'animation': "pop 800ms ease-out forwards",
-      "-moz-animation": "pop 800ms ease-out forwards" });
+      $(".projects .outerdiv div a:nth-child(" + n + ")").css({ 'animation': "pop 800ms ease-out forwards",});
       n++;
       if (n == 7) {
         clearInterval(interval);
