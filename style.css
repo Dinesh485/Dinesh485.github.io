@@ -51,11 +51,10 @@ nav ul {
   align-items: center;
   background: black;
   clip-path: circle(50% at 150% -50%);
-  transition: clip-path 500ms ease-in-out,transform 500ms ease-in-out;
+  transition: clip-path 500ms ease-in-out;
 }
 nav .path {
   clip-path: circle(100%);
-  transform: translateZ(0)
 }
 nav ul li a {
   color: white;
