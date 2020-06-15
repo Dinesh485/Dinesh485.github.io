@@ -55,7 +55,15 @@ nav ul {
   transform: translateZ(0);
 }
 nav .path {
-  clip-path: circle(100%);
+  animation: clip 500ms ease-in-out forwards;
+}
+@keyframes clip{
+  from{
+    clip-path: circle(50% at 150% -50%)
+  }
+  to{
+    clip-path: circle(100%)
+  }
 }
 nav ul li a {
   color: white;
