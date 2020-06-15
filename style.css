@@ -59,10 +59,12 @@ nav .path {
 }
 @keyframes clip{
   from{
-    clip-path: circle(50% at 150% -50%)
+    clip-path: circle(50% at 150% -50%);
+    transform: translateZ(0)
   }
   to{
-    clip-path: circle(100%)
+    clip-path: circle(100%);
+     transform: translateZ(0)
   }
 }
 nav ul li a {
