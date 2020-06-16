@@ -75,6 +75,7 @@ header {
   background: url('./assets/images/buildings-1851246\ \(1\).jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-x: center;
   color: white;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
