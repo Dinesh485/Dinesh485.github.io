@@ -1,12 +1,18 @@
 $(document).ready(function () {
+
+  
+  $(window).on("scroll", function () {
+    let offset = window.pageYOffset * -0.5;
+    $("header").css({ "background-position-y": offset });
+  });
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`)
+
+
   setTimeout(() => {
     $("header .intro").addClass("intro-path");
   }, 500);
-   
-  $(window).on('scroll', function () {
-    let offset = window.pageYOffset * -0.5;
-    $('header').css({'background-position-y': offset})
-  })
+ 
 
   if (window.matchMedia('(max-width: 1000px').matches) {
     $(".menu-icon").click(function () {

@@ -78,8 +78,7 @@ header {
   background-attachment: fixed;
   color: white;
   height: 100vh;
-  min-height: 100vh;
-  max-height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   width: 100%;
   font-size: 1em;
   display: grid;
