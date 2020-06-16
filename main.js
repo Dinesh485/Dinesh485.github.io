@@ -5,8 +5,14 @@ $(document).ready(function () {
     let offset = window.pageYOffset * -0.5;
     $("header").css({ "background-position-y": offset });
   });
+
+  $(window).on('resize', function () {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+  });
   let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`)
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+  
 
 
   setTimeout(() => {
