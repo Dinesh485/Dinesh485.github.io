@@ -72,7 +72,10 @@ nav ul li {
 
 /*header*/
 header {
-  background: black;
+  background: url('./assets/images/buildings-1851246\ \(1\).jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: white;
   height: 100vh;
   width: 100%;
