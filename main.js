@@ -1,10 +1,10 @@
 $(document).ready(function () {
 
   
-  $(window).on("scroll", function () {
-    let offset = window.pageYOffset * -0.5;
-    $("header").css({ "background-position-y": offset });
-  });
+    $(window).on("scroll", function () {
+      let offset = window.pageYOffset * -0.5;
+      $("header").css({ "background-position-y": offset });
+    });
 
   $(window).on('resize', function () {
     let vh = window.innerHeight * 0.01;
@@ -13,7 +13,6 @@ $(document).ready(function () {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty("--vh", `${vh}px`);
   
-
 
   setTimeout(() => {
     $("header .intro").addClass("intro-path");

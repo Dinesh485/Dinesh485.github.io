@@ -72,14 +72,13 @@ nav ul li {
 
 /*header*/
 header {
-  background: url('./assets/images/buildings-1851246\ \(1\).jpg');
+  background: url(./assets/images/john-towner-JgOeRuGD_Y4-unsplash.jpg);
   background-size: cover;
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position-x: center;
   color: white;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
-  width: 100%;
   font-size: 1em;
   display: grid;
   grid-template-rows: repeat(6, 1fr);
