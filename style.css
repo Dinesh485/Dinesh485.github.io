@@ -78,7 +78,7 @@ header {
   background-repeat: no-repeat;
   color: white;
   height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
+  max-height: calc(var(--vh, 1vh) * 100);
   font-size: 1em;
   display: grid;
   grid-template-rows: repeat(6, 1fr);
