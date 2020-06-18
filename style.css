@@ -257,9 +257,7 @@ header .scroll svg path {
   transition: transform 200ms linear;
   font-size: 16px;
 }
-.projects a:hover {
-  transform: scale(1.05);
-}
+
 /*projects section over*/
 /*contact section*/
 .social-media {
@@ -521,6 +519,9 @@ input[type="submit"]:hover {
     grid-column: 8;
     grid-row: 3 / span 2;
   }
+  .projects a:hover {
+  transform: scale(1.05);
+}
   .contact {
     padding-bottom: 100px;
   }
