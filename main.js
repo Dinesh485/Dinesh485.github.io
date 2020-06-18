@@ -1,8 +1,6 @@
 $(document).ready(function () {
 
   $(window).on('load', function () {
-
-    $('.load').fadeOut()
     setTimeout(() => {
       $("header .intro").addClass("intro-path");
     }, 500);
