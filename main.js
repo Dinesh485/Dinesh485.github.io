@@ -1,6 +1,12 @@
 $(document).ready(function () {
 
-  
+  $(window).on('load', function () {
+
+    $('.load').fadeOut()
+    setTimeout(() => {
+      $("header .intro").addClass("intro-path");
+    }, 500);
+  })
     $(window).on("scroll", function () {
       let offset = window.pageYOffset * -0.5;
       $("header").css({ "background-position-y": offset });
@@ -14,9 +20,7 @@ $(window).on('resize', function () {
   document.documentElement.style.setProperty("--vh", `${vh}px`);
   
 
-  setTimeout(() => {
-    $("header .intro").addClass("intro-path");
-  }, 500);
+  
  
 
   if (window.matchMedia('(max-width: 1000px').matches) {
