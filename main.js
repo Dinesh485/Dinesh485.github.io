@@ -1,9 +1,7 @@
 $(document).ready(function () {
 
   $(window).on('load', function () {
-    setTimeout(() => {
       $("header .intro").addClass("intro-path");
-    }, 500);
   })
     $(window).on("scroll", function () {
       let offset = window.pageYOffset * -0.5;
