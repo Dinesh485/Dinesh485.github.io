@@ -232,7 +232,7 @@ header .scroll svg path {
   transition: transform 200ms linear;
 }
 .projects div a:nth-child(1) {
-  background-image: url("./assets/images/placholder-images/placeimg_640_480_animals.jpg");
+  background-image: url("./assets/images/placholder-images/project\ 1\ image.png");
 }
 .projects div a:nth-child(2) {
   background-image: url("./assets/images/placholder-images/placeimg_640_480_any.jpg");
