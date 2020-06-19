@@ -1,12 +1,14 @@
-$(document).ready(function () {
-
-  window.onload = function () {
-    $('.load').fadeOut()
-     $("header .intro").addClass("intro-path");
-  }
+ window.onload = function () {
+   $(".load").fadeOut();
+   $("header .intro").addClass("intro-path");
+};
+  
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty("--vh", `${vh}px`);
   
+
+$(document).ready(function () {
+
   if (window.matchMedia("(min-width: 1000px)").matches) {
     $(window).on("scroll", function () {
       let offset = window.pageYOffset * -0.5;
