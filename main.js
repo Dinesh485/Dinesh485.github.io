@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
   window.onload = function () {
+    $('.load').fadeOut()
      $("header .intro").addClass("intro-path");
   }
   let vh = window.innerHeight * 0.01;
