@@ -7,7 +7,7 @@ window.onload = function () {
 
 $(document).ready(function () {
 
-  
+
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty("--vh", `${vh}px`);
   
@@ -34,6 +34,9 @@ $(document).ready(function () {
       $("nav ul li a ").css({ "pointer-events": "none" });
     });
   }
+  $('nav ul').bind('touchmove', (e) => {
+    e.preventDefault();
+  })
 
   function slider() {
     let n = 1;
