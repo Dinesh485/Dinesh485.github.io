@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
-  $(window).on('load', function () {
-      $("header .intro").addClass("intro-path");
-  })
+  window.onload = function () {
+     $("header .intro").addClass("intro-path");
+  }
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty("--vh", `${vh}px`);
   
