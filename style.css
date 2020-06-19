@@ -16,6 +16,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: rgba(36, 36, 36, 0.836);
 }
 .menu-icon {
   width: 35px;
