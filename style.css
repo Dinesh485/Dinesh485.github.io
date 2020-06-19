@@ -78,6 +78,7 @@ nav ul li {
 header {
   background: url(./assets/images/buildings-1851246.jpg);
   background-size: cover;
+  background-position: fixed;
   background-attachment: fixed;
   background-repeat: no-repeat;
   color: white;

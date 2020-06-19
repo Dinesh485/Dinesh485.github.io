@@ -3,7 +3,7 @@ $(document).ready(function () {
   $(window).on('load', function () {
       $("header .intro").addClass("intro-path");
   })
-   
+   let vw = window.innerWidth *0.01
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty("--vh", `${vh}px`);
   
